@@ -35,6 +35,16 @@ export const FEEDS: Record<string, Feed[]> = {
     { name: '[ECO:国际] Carbon Brief', url: rss('https://www.carbonbrief.org/feed') },
     { name: '[ECO:国际] The Guardian Environment', url: rss('https://www.theguardian.com/environment/rss') },
   ],
+  cn_official: [
+    { name: '[ECO:中国] 生态环境部 · 环境要闻', url: rss('https://rsshub.rssforever.com/gov/mee/ywdt/hjywnews') },
+    { name: '[ECO:中国] 应急管理部 · 事故通报', url: rss('https://rsshub.rssforever.com/gov/mem/gk/sgcc/tbzdsgdcbg') },
+  ],
+  cn_media: [
+    { name: '[ECO:中国] 澎湃 · 绿政公署', url: rss('https://rsshub.rssforever.com/thepaper/channel/25950') },
+  ],
+  cn_ecology: [
+    { name: '[ECO:中国] China Dialogue 中文', url: rss('https://chinadialogue.net/zh/feed/') },
+  ],
 };
 
 // Panel configuration for eco monitoring
@@ -43,6 +53,9 @@ export const DEFAULT_PANELS: Record<string, PanelConfig> = {
   official: { name: '[ECO] 官方通报', enabled: true, priority: 1 },
   media: { name: '[ECO] 媒体报道', enabled: true, priority: 1 },
   international: { name: '[ECO] 国际视角', enabled: true, priority: 1 },
+  cn_official: { name: '[ECO] 中国官方', enabled: true, priority: 1 },
+  cn_media: { name: '[ECO] 中国媒体', enabled: true, priority: 1 },
+  cn_ecology: { name: '[ECO] 中国生态', enabled: true, priority: 1 },
   'bilibili-live': { name: '实时监控', enabled: true, priority: 1 },
 };
 

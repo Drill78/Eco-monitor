@@ -427,6 +427,16 @@ export const VARIANT_FEEDS: Record<string, Record<string, ServerFeed[]>> = {
       { name: '[ECO:国际] Carbon Brief', url: 'https://www.carbonbrief.org/feed' },
       { name: '[ECO:国际] The Guardian Environment', url: 'https://www.theguardian.com/environment/rss' },
     ],
+    cn_official: [
+      { name: '[ECO:中国] 生态环境部 · 环境要闻', url: 'https://rsshub.rssforever.com/gov/mee/ywdt/hjywnews' },
+      { name: '[ECO:中国] 应急管理部 · 事故通报', url: 'https://rsshub.rssforever.com/gov/mem/gk/sgcc/tbzdsgdcbg' },
+    ],
+    cn_media: [
+      { name: '[ECO:中国] 澎湃 · 绿政公署', url: 'https://rsshub.rssforever.com/thepaper/channel/25950' },
+    ],
+    cn_ecology: [
+      { name: '[ECO:中国] China Dialogue 中文', url: 'https://chinadialogue.net/zh/feed/' },
+    ],
   },
 };
 
