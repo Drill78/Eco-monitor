@@ -414,6 +414,19 @@ export const VARIANT_FEEDS: Record<string, Record<string, ServerFeed[]>> = {
       { name: 'Shareable', url: 'https://www.shareable.net/feed/' },
     ],
   },
+  eco: {
+    official: [
+      { name: '[ECO:官方] 生态环境部 · 环境要闻', url: 'https://rsshub.rssforever.com/gov/mee/ywdt/hjywnews' },
+      { name: '[ECO:官方] 应急管理部 · 事故通报', url: 'https://rsshub.rssforever.com/gov/mem/gk/sgcc/tbzdsgdcbg' },
+    ],
+    media: [
+      { name: '[ECO:媒体] 澎湃 · 绿政公署', url: 'https://rsshub.rssforever.com/thepaper/channel/25950' },
+    ],
+    international: [
+      { name: '[ECO:国际] Carbon Brief', url: 'https://www.carbonbrief.org/feed' },
+      { name: '[ECO:国际] China Dialogue', url: 'https://chinadialogue.net/en/feed/' },
+    ],
+  },
 };
 
 export const INTEL_SOURCES: ServerFeed[] = [
