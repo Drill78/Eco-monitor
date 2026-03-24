@@ -42,6 +42,9 @@ export default [
   "www.reutersagency.com",
   "feeds.reuters.com",
   "rsshub.app",
+  "rsshub.rssforever.com",
+  "rss.qiuyuair.com",
+  "rss.feiyuyu.net",
   "asia.nikkei.com",
   "www.cfr.org",
   "www.csis.org",
@@ -294,5 +297,7 @@ export default [
   "bitcoinmagazine.com",
   "www.dlnews.com",
   "cryptoslate.com",
-  "unchainedcrypto.com"
+  "unchainedcrypto.com",
+  "carbonbrief.org",
+  "chinadialogue.net"
 ];

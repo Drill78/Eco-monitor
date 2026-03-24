@@ -127,4 +127,23 @@ export const VARIANT_META: { full: VariantMeta; [k: string]: VariantMeta } = {
       'Futures market data',
     ],
   },
+  eco: {
+    title: 'Eco Monitor - 中国生态环境监测',
+    description: '中国生态环境实时监测仪表盘，追踪环境新闻、气候变化、自然灾害、物种保护与可再生能源动态。',
+    keywords: '生态环境, 环境监测, 气候变化, 自然灾害, 物种保护, 可再生能源, 环境新闻, 中国环境, eco monitor, climate, conservation, renewable energy',
+    url: 'https://eco.worldmonitor.app/',
+    siteName: 'Eco Monitor',
+    shortName: 'EcoMonitor',
+    subject: 'Ecological Environment Monitoring and Climate Intelligence',
+    classification: 'Environment Dashboard, Climate Tracker, Eco Intelligence',
+    categories: ['news', 'environment'],
+    features: [
+      'Ecological news aggregation',
+      'Climate event monitoring',
+      'Natural disaster alerts',
+      'Species conservation tracking',
+      'Renewable energy dashboard',
+      'Weather impact monitoring',
+    ],
+  },
 };
