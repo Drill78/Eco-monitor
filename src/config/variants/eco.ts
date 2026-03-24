@@ -39,7 +39,9 @@ export const FEEDS: Record<string, Feed[]> = {
 // Panel configuration for eco monitoring
 export const DEFAULT_PANELS: Record<string, PanelConfig> = {
   map: { name: 'Eco Map', enabled: true, priority: 1 },
-  'live-news': { name: 'Eco Headlines', enabled: true, priority: 1 },
+  official: { name: '[ECO] 官方通报', enabled: true, priority: 1 },
+  media: { name: '[ECO] 媒体报道', enabled: true, priority: 1 },
+  international: { name: '[ECO] 国际视角', enabled: true, priority: 1 },
   'live-webcams': { name: 'Live Webcams', enabled: true, priority: 1 },
 };
 
