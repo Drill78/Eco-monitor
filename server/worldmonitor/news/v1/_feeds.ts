@@ -416,15 +416,16 @@ export const VARIANT_FEEDS: Record<string, Record<string, ServerFeed[]>> = {
   },
   eco: {
     official: [
-      { name: '[ECO:官方] 生态环境部 · 环境要闻', url: 'https://rsshub.rssforever.com/gov/mee/ywdt/hjywnews' },
-      { name: '[ECO:官方] 应急管理部 · 事故通报', url: 'https://rsshub.rssforever.com/gov/mem/gk/sgcc/tbzdsgdcbg' },
+      { name: '[ECO:权威] UNEP 联合国环境署', url: 'https://www.unep.org/news-and-stories/rss.xml' },
+      { name: '[ECO:权威] NASA Climate', url: 'https://climate.nasa.gov/news/rss.xml' },
     ],
     media: [
-      { name: '[ECO:媒体] 澎湃 · 绿政公署', url: 'https://rsshub.rssforever.com/thepaper/channel/25950' },
+      { name: '[ECO:媒体] Inside Climate News', url: 'https://insideclimatenews.org/feed' },
+      { name: '[ECO:媒体] Climate Home News', url: 'https://climatechangenews.com/feed' },
     ],
     international: [
       { name: '[ECO:国际] Carbon Brief', url: 'https://www.carbonbrief.org/feed' },
-      { name: '[ECO:国际] China Dialogue', url: 'https://chinadialogue.net/en/feed/' },
+      { name: '[ECO:国际] The Guardian Environment', url: 'https://www.theguardian.com/environment/rss' },
     ],
   },
 };

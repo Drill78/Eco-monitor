@@ -1,19 +1,19 @@
 import { Panel } from './Panel';
 
-interface BilibiliStream {
+interface EcoStream {
   id: string;
   name: string;
-  roomId: string;
+  videoId: string;
 }
 
-const BILIBILI_STREAMS: BilibiliStream[] = [
-  { id: 'bilibili-cam-1', name: 'Bilibili Cam 1', roomId: '27209418' },
-  { id: 'bilibili-cam-2', name: 'Bilibili Cam 2', roomId: '27194596' },
+const ECO_STREAMS: EcoStream[] = [
+  { id: 'eco-cam-1', name: 'Eco Cam 1', videoId: 'gnEuhfyZPPQ' },
+  { id: 'eco-cam-2', name: 'Eco Cam 2', videoId: 'F0GOOP82094' },
 ];
 
 export class BilibiliLivePanel extends Panel {
   constructor() {
-    super({ id: 'bilibili-live', title: 'B站生态直播' });
+    super({ id: 'bilibili-live', title: '实时监控' });
     this.render();
   }
 
@@ -21,7 +21,7 @@ export class BilibiliLivePanel extends Panel {
     const grid = document.createElement('div');
     grid.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;';
 
-    for (const stream of BILIBILI_STREAMS) {
+    for (const stream of ECO_STREAMS) {
       const cell = document.createElement('div');
       cell.style.cssText = 'display:flex;flex-direction:column;gap:4px;';
 
@@ -30,9 +30,9 @@ export class BilibiliLivePanel extends Panel {
       label.style.cssText = 'font-size:12px;color:#ccc;text-align:center;';
 
       const iframe = document.createElement('iframe');
-      iframe.src = `https://live.bilibili.com/blanc/${stream.roomId}`;
+      iframe.src = `https://www.youtube.com/embed/${stream.videoId}?autoplay=1&mute=1&controls=1`;
       iframe.title = stream.name;
-      iframe.allow = 'autoplay';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
       iframe.allowFullscreen = true;
       iframe.style.cssText = 'width:100%;height:300px;border:none;border-radius:4px;';
 

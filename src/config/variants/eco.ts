@@ -24,15 +24,16 @@ const rss = rssProxyUrl;
 
 export const FEEDS: Record<string, Feed[]> = {
   official: [
-    { name: '[ECO:官方] 生态环境部 · 环境要闻', url: rss('https://rsshub.rssforever.com/gov/mee/ywdt/hjywnews') },
-    { name: '[ECO:官方] 应急管理部 · 事故通报', url: rss('https://rsshub.rssforever.com/gov/mem/gk/sgcc/tbzdsgdcbg') },
+    { name: '[ECO:权威] UNEP 联合国环境署', url: rss('https://www.unep.org/news-and-stories/rss.xml') },
+    { name: '[ECO:权威] NASA Climate', url: rss('https://climate.nasa.gov/news/rss.xml') },
   ],
   media: [
-    { name: '[ECO:媒体] 澎湃 · 绿政公署', url: rss('https://rsshub.rssforever.com/thepaper/channel/25950') },
+    { name: '[ECO:媒体] Inside Climate News', url: rss('https://insideclimatenews.org/feed') },
+    { name: '[ECO:媒体] Climate Home News', url: rss('https://climatechangenews.com/feed') },
   ],
   international: [
     { name: '[ECO:国际] Carbon Brief', url: rss('https://www.carbonbrief.org/feed') },
-    { name: '[ECO:国际] China Dialogue', url: rss('https://chinadialogue.net/en/feed/') },
+    { name: '[ECO:国际] The Guardian Environment', url: rss('https://www.theguardian.com/environment/rss') },
   ],
 };
 
@@ -42,7 +43,7 @@ export const DEFAULT_PANELS: Record<string, PanelConfig> = {
   official: { name: '[ECO] 官方通报', enabled: true, priority: 1 },
   media: { name: '[ECO] 媒体报道', enabled: true, priority: 1 },
   international: { name: '[ECO] 国际视角', enabled: true, priority: 1 },
-  'bilibili-live': { name: 'B站生态直播', enabled: true, priority: 1 },
+  'bilibili-live': { name: '实时监控', enabled: true, priority: 1 },
 };
 
 // Eco-focused map layers — only weather, natural, fires, climate, outages enabled

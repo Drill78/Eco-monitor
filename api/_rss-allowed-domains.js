@@ -299,5 +299,9 @@ export default [
   "cryptoslate.com",
   "unchainedcrypto.com",
   "carbonbrief.org",
-  "chinadialogue.net"
+  "chinadialogue.net",
+  "www.unep.org",
+  "climate.nasa.gov",
+  "insideclimatenews.org",
+  "climatechangenews.com"
 ];
